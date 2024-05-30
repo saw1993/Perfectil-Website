@@ -23,6 +23,9 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         loadingBox.style.display = 'none';
         alert('Form submitted successfully!');
         document.getElementById('registrationForm').reset(); // Clear the form
+
+        // Redirect to the new website
+        window.location.href = 'https://wa.me/c/94705008444'; // Replace with your desired URL
     })
     .catch(error => {
         loadingBox.style.display = 'none';
@@ -30,4 +33,3 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         console.error('Error:', error);
     });
 });
-
