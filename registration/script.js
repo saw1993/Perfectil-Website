@@ -21,7 +21,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     })
     .then(response => {
         loadingBox.style.display = 'none';
-        alert('Form submitted successfully!');
+        alert('Thank you very much !');
         document.getElementById('registrationForm').reset(); // Clear the form
 
         // Redirect to the new website
