@@ -1,6 +1,9 @@
 document.getElementById('registrationForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
+    const loadingBox = document.getElementById('loadingBox');
+    loadingBox.style.display = 'block';
+
     const formData = {
         name: document.getElementById('name').value,
         hospital: document.getElementById('hospital').value,
@@ -17,11 +20,14 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         body: JSON.stringify(formData)
     })
     .then(response => {
-        console.log(response.status)
-        alert('Form submitted successfully! Thank you');
+        loadingBox.style.display = 'none';
+        alert('Form submitted successfully!');
+        document.getElementById('registrationForm').reset(); // Clear the form
     })
     .catch(error => {
-        alert('Error submitting form! please retry');
+        loadingBox.style.display = 'none';
+        alert('Error submitting form!');
         console.error('Error:', error);
     });
 });
+
