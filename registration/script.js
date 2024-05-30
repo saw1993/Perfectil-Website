@@ -17,7 +17,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         body: JSON.stringify(formData)
     })
     .then(response => {
-        alert('Form submitted successfully!');
+        alert('Form submitted successfully! Thank you');
     })
     .catch(error => {
         alert('Error submitting form! please retry');
