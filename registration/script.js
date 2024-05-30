@@ -8,7 +8,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         email: document.getElementById('email').value
     };
 
-    fetch('YOUR_GOOGLE_APPS_SCRIPT_URL', {
+    fetch('https://script.google.com/macros/s/AKfycbwkWDoz7A9XGUdtBoGhM1uCmqmScNlZBVxnoJWV6BXM9xQRiJTe2v6tyCyqxS3nKjMx/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
@@ -17,6 +17,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         body: JSON.stringify(formData)
     })
     .then(response => {
+        console.log(response.status)
         alert('Form submitted successfully! Thank you');
     })
     .catch(error => {
