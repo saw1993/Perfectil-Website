@@ -25,7 +25,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         document.getElementById('registrationForm').reset(); // Clear the form
 
         // Redirect to the new website
-        window.location.href = 'https://wa.me/c/94705008444'; // Replace with your desired URL
+        window.location.href = 'https://perfectil.lk/downloads/vb_catelogue.pdf'; // Replace with your desired URL
     })
     .catch(error => {
         loadingBox.style.display = 'none';
