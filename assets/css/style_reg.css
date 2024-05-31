@@ -148,6 +148,13 @@ opacity:1;
 	max-width: 200px;
 }
 
+.logo-box-qr img {
+	width: 200px;
+	height: 200px;
+
+}
+
+
 .bottom-logo-box img {
 	max-width:60%;
 }
